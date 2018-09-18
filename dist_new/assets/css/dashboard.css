@@ -18631,3 +18631,16 @@ table{
   width: 2rem;
   height: 2rem;
 }
+
+.btn-add-public{
+    color: #fff;
+    background-color: #4A76A8;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.btn-add-public:hover{
+    background-color: #3D6898;
+    text-decoration: none;
+    color: #fff;
+}
