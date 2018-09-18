@@ -18637,6 +18637,7 @@ table{
     background-color: #4A76A8;
     padding: 10px 20px;
     font-weight: 700;
+    border-radius: 3px;
 }
 
 .btn-add-public:hover{
