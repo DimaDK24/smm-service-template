@@ -18613,6 +18613,11 @@ svg {
   content: "\ea06";
 }
 /* My Styles*/
+
+.panel-control{
+  margin-top: 30px;
+}
+
 table{
   font-size: 1.2rem;
 }
