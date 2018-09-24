@@ -11,6 +11,9 @@ table{
     min-height: 2.5rem !important;
 }
 
+.title-text{
+    font-size: 1rem;
+}
 
 .table-center{
     text-align: center;
@@ -36,5 +39,60 @@ table{
 }
 
 .icon-my{
-    width: 36px;
+    width: 24px;
+}
+
+.header-panel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-control{
+    display: block;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+.public-text-name{
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+.ava{
+    margin-right: 15px;
+    width: 4rem;
+    height: 4rem;
+}
+
+.public-users{
+    padding-top: 1rem;
+}
+
+.count{
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .header-control{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .header-panel{
+        display: block;
+    }
+
+    .ava{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .public-text-name{
+        font-size: 1.4rem;
+    }
 }

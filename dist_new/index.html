@@ -44,20 +44,19 @@
     <div class="panel-control">
         <div class="container">
             <div class="row mb-4">
-                <div class="col-sm-4 text-center">
-                    <span class="btn-control">Обновить данные</span>
-                    <!--<img src="assets/images/icons/refresh-cw.svg" alt="">-->
-                    <img src="assets/images/icons/refresh.svg" alt="" class="icon-my">
-                </div>
-                <div class="col-sm-4 text-center">
-                    <span class="btn-control" id="clear">Очистить все</span>
-                    <!--<img src="assets/images/icons/broom.png" alt="">-->
-                    <img src="assets/images/icons/broom.svg" alt="" class="icon-my">
-                </div>
-                <div class="col-sm-4 text-center">
-                    <span class="btn-control">Удалить сообщества</span>
-                    <!--<img src="assets/images/icons/trash.svg" alt="">-->
-                    <img src="assets/images/icons/delete.svg" alt="" class="icon-my">
+                <div class="col-12 header-panel">
+                    <div class="header-control">
+                        <img src="assets/images/icons/refresh.svg" alt="" class="icon-my">
+                        <span class="btn-control title-text">Обновить</span>
+                    </div>
+                    <div class="header-control">
+                        <img src="assets/images/icons/broom.svg" alt="" class="icon-my">
+                        <span class="btn-control title-text" id="clear">Очистить</span>
+                    </div>
+                    <div class="header-control">
+                        <img src="assets/images/icons/delete.svg" alt="" class="icon-my">
+                        <span class="btn-control title-text">Удалить</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,13 +66,29 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <table class="table card-table table-vcenter text-nowrap">
+                        <div class="public d-block d-md-none w-100">
+                            <div class="public-name d-flex align-items-center justify-content-center">
+                                <img src="demo/logo.jpg" alt="" class="rounded-circle ava img-fluid">
+                                <p class="public-text-name">Мой компьютер</p>
+                            </div>
+                            <div class="public-users d-flex justify-content-around">
+
+                                <span class="count-users d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                    <span class="count">50 000</span>
+                                </span>
+                                <span class="dog-users d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-x"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line></svg>
+                                   <span class="count">10%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <table class="table card-table table-vcenter text-nowrap  d-none d-md-table">
                             <thead>
                                 <tr>
                                     <th class="table-center"></th>
                                     <th colspan="2" class="table-center">Паблик</th>
                                     <th class="table-center">Подписчиков</th>
-                                    <th class="table-center">Собачек</th>
                                     <th class="table-center">% собачек</th>
                                 </tr>
                             </thead>
@@ -93,9 +108,6 @@
                                 </td>
                                 <td class="table-center">
                                     52 303
-                                </td>
-                                <td class="table-center">
-                                    500
                                 </td>
                                 <td class="table-center">
                                     10
@@ -118,9 +130,6 @@
                                     520 303
                                 </td>
                                 <td class="table-center">
-                                    5000
-                                </td>
-                                <td class="table-center">
                                     10
                                 </td>
                             </tr>
@@ -141,9 +150,6 @@
                                     52 303
                                 </td>
                                 <td class="table-center">
-                                    500
-                                </td>
-                                <td class="table-center">
                                     10
                                 </td>
                             </tr>
@@ -162,9 +168,6 @@
                                 </td>
                                 <td class="table-center">
                                     52 303
-                                </td>
-                                <td class="table-center">
-                                    500
                                 </td>
                                 <td class="table-center">
                                     10
