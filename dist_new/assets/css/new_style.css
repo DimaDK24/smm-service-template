@@ -44,7 +44,7 @@ table{
 
 .header-panel{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header-control{
