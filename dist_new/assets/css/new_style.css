@@ -1,3 +1,32 @@
+.page{
+    margin-top: 38px;
+}
+
+header{
+    background-color: #4A76A8;
+    position: fixed;
+    left: 0; right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.navbar{
+    margin: 0;
+}
+
+.th-fix{
+    position: absolute;
+    top: -10px;
+}
+
 .panel-control{
     margin-top: 30px;
 }
@@ -9,6 +38,16 @@ table{
 .label-res{
     margin-bottom: 0;
     min-height: 2.5rem !important;
+}
+
+.table-wrapper{
+    position: relative;
+}
+
+.table-scroll{
+    height:300px;
+    overflow:auto;
+    margin-top:20px;
 }
 
 .title-text{
@@ -54,6 +93,10 @@ table{
     padding: 10px 25px;
 }
 
+.header-control:hover{
+    cursor: pointer;
+}
+
 .public-text-name{
     font-size: 1.8rem;
     margin: 0;
@@ -83,8 +126,12 @@ table{
 }
 
 @media screen and (max-width: 380px){
-    .header-panel{
-        display: block;
+    /*.header-panel{*/
+        /*display: block;*/
+    /*}*/
+
+    .header-control{
+        padding: 10px;
     }
 
     .ava{
