@@ -27,6 +27,10 @@
         });
     </script>
     <!-- Dashboard Core -->
+
+    <script src="./../node_modules/progressbar.js/dist/progressbar.min.js"></script>
+
+    <script src="assets/js/vendors/jquery-3.2.1.min.js" ></script>
     <link href="./assets/css/dashboard.css" rel="stylesheet"/>
     <script src="./assets/js/dashboard.js"></script>
     <link rel="stylesheet" href="./assets/css/new_style.css">
@@ -57,7 +61,7 @@
     </header>
     <div class="panel-control">
         <div class="container">
-            <div class="row mb-4">
+            <div class="row mb-7">
                 <div class="col-12 header-panel">
                     <div class="header-control">
                         <img src="assets/images/icons/refresh.svg" alt="" class="icon-my">
@@ -75,19 +79,18 @@
             </div>
         </div>
     </div>
-
-    <div class="container">
+    <div class="container d-none d-md-block">
         <div class="row">
             <div class="col-12">
                 <div class="table-wrapper">
                     <div class="table-scroll">
                         <table class="table card-table table-vcenter text-nowrap  d-none d-md-table">
-                            <thead>
+                            <thead class="thead">
                             <tr>
-                                <th colspan="2"><span class="th-fix text-center"></span></th>
-                                <th><span class="th-fix text-center">Сообщества</span></th>
-                                <th><span class="th-fix text-center">Подписчиков</span></th>
-                                <th><span class="th-fix text-center">% собачек</span></th>
+                                <th colspan="2"><span class="text-center"></span></th>
+                                <th><span class="text-center">Сообщества</span></th>
+                                <th><span class="text-center">Подписчиков</span></th>
+                                <th><span class="text-center">% собачек</span></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -104,10 +107,10 @@
                                 <td class="table-center">
                                     Мой компьютер
                                 </td>
-                                <td class="table-center">
+                                <td class="table-center count-pc">
                                     52 303
                                 </td>
-                                <td class="table-center">
+                                <td class="table-center count-pc">
                                     10
                                 </td>
                             </tr>
@@ -144,11 +147,10 @@
                                 <td class="table-center">
                                     Мой компьютер
                                 </td>
-                                <td class="table-center">
-                                    52 303
-                                </td>
-                                <td class="table-center">
-                                    10
+                                <td colspan="2">
+                                    <div class="progress">
+
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -222,6 +224,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
                 <div class="add-public">
                     <a href="#" class="d-block text-center btn-add-public">Добавить сообщество</a>
                 </div>
@@ -229,5 +237,45 @@
         </div>
     </div>
 </div>
+<script>
+    // progressbar.js@1.0.0 version is used
+    // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+    var ProgressBar = require('progressbar.js')
+
+    require(['progressbar.js'], function (progressbar) {
+        var bar = new progressbar.Line(container, {
+            strokeWidth: 4,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: '#FFEA82',
+            trailColor: '#eee',
+            trailWidth: 1,
+            svgStyle: {width: '100%', height: '100%'},
+            text: {
+                style: {
+                    // Text color.
+                    // Default: same as stroke color (options.color)
+                    color: '#999',
+                    position: 'absolute',
+                    right: '0',
+                    top: '30px',
+                    padding: 0,
+                    margin: 0,
+                    transform: null
+                },
+                autoStyleContainer: false
+            },
+            from: {color: '#FFEA82'},
+            to: {color: '#ED6A5A'},
+            step: (state, bar) => {
+                bar.setText(Math.round(bar.value() * 100) + ' %');
+            }
+        });
+
+        bar.animate(1.0);  // Number from 0.0 to 1.0
+    });
+
+
+</script>
 </body>
 </html>

@@ -22,14 +22,29 @@ header{
     margin: 0;
 }
 
-.th-fix{
+.thead{
     position: absolute;
-    top: -10px;
+    background: #fff;
+    display: flex;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: -30px;
 }
 
-.panel-control{
-    margin-top: 30px;
+.thead>tr{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
+
+.thead>tr>th{
+    border:none;
+}
+
+/*.panel-control{*/
+    /*margin-top: 30px;*/
+/*}*/
 
 table{
     font-size: 1.2rem;
@@ -115,6 +130,12 @@ table{
 
 .count{
     margin-left: 15px;
+}
+
+.progress{
+    width: 400px;
+    height: 8px;
+    position: relative;
 }
 
 @media screen and (max-width: 768px){
