@@ -2,6 +2,10 @@
     margin-top: 38px;
 }
 
+.main-color{
+    background-color: #4A76A8;
+}
+
 header{
     background-color: #4A76A8;
     position: fixed;
@@ -133,10 +137,18 @@ table{
 }
 
 .progress{
-    width: 400px;
-    height: 8px;
-    position: relative;
+    background-color: #a3abb3 !important;
 }
+
+.completing{
+    font-size: 14px;
+}
+
+.percent{
+    position: absolute;
+    left: 50%;
+}
+
 
 @media screen and (max-width: 768px){
     .header-control{
