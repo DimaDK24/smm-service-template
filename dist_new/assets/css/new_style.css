@@ -27,9 +27,9 @@ header{
 }
 
 .thead{
-    position: absolute;
+    /*position: absolute;*/
     background: #fff;
-    display: flex;
+    /*display: flex;*/
     z-index: 100;
     left: 0;
     right: 0;
@@ -37,10 +37,11 @@ header{
 }
 
 .thead>tr{
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
     width: 100%;
 }
+
 
 .thead>tr>th{
     border:none;
@@ -149,6 +150,9 @@ table{
     left: 50%;
 }
 
+.icon-w{
+    max-width: 60px;
+}
 
 @media screen and (max-width: 768px){
     .header-control{
