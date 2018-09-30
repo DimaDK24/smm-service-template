@@ -5,6 +5,10 @@
 /*}*/
 
 
+#table-wrapper{
+    margin-top: 50px;
+}
+
 .table{
     text-align: center;
 }

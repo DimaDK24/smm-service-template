@@ -26,31 +26,6 @@ header{
     margin: 0;
 }
 
-.thead{
-    /*position: absolute;*/
-    background: #fff;
-    /*display: flex;*/
-    z-index: 100;
-    left: 0;
-    right: 0;
-    top: -30px;
-}
-
-.thead>tr{
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    width: 100%;
-}
-
-
-.thead>tr>th{
-    border:none;
-}
-
-/*.panel-control{*/
-    /*margin-top: 30px;*/
-/*}*/
-
 table{
     font-size: 1.2rem;
 }
@@ -58,16 +33,6 @@ table{
 .label-res{
     margin-bottom: 0;
     min-height: 2.5rem !important;
-}
-
-.table-wrapper{
-    position: relative;
-}
-
-.table-scroll{
-    height:300px;
-    overflow:auto;
-    margin-top:20px;
 }
 
 .title-text{

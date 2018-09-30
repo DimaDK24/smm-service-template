@@ -135,7 +135,9 @@ Version: 1.0.8
                 }
                 else
                 {
-                    obj.container.css("top", obj.scroller.offset().top + "px");
+                    //прижал header к верху страницы
+                    obj.container.css("top", "0px");
+                    obj.container.css("z-index", "3");
                 }
                 
             obj.container.css("position", "absolute");
@@ -143,7 +145,7 @@ Version: 1.0.8
             } else if (params && params.scrollListenerEl!== undefined) { 
                 obj.container.css("top", obj.scroller.find("thead > tr").innerHeight() + "px");
                 obj.container.css("position", "absolute");
-                obj.container.css("z-index", "2");
+                obj.container.css("z-index", "3");
             } else if (params && params.offset !== undefined) {
                 obj.container.css("top", params.offset);
                 obj.container.css("position", "fixed");
