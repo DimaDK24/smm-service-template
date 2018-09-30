@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="assets/css/test-page.css">
 </head>
 <body>
@@ -44,7 +45,7 @@
 
 <div id="table-wrapper">
     <div id="table-scroll">
-        <table>
+        <table class="table" style="background-color:#fff;">
             <thead>
             <tr>
                 <th colspan="3"><span class="text">Сообщества</span></th>
@@ -53,7 +54,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr class="grid">
                 <td class="table-center">
                     <label class="custom-control label-res custom-checkbox">
                         <input type="checkbox" class="custom-control-input" name="example-checkbox1">
@@ -73,7 +74,7 @@
                     10
                 </td>
             </tr>
-            <tr>
+            <tr class="grid">
                 <td class="table-center">
                     <label class="custom-control label-res custom-checkbox">
                         <input type="checkbox" class="custom-control-input" name="example-checkbox1">
@@ -93,7 +94,7 @@
                     10
                 </td>
             </tr>
-            <tr>
+            <tr class="grid">
                 <td class="table-center">
                     <label class="custom-control label-res custom-checkbox">
                         <input type="checkbox" class="custom-control-input" name="example-checkbox1">
@@ -117,5 +118,13 @@
         </table>
     </div>
 </div>
+
+<script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.freezeheader.js"></script>
+<script>
+    $('table').freezeHeader({
+        height: "200px"
+    })
+</script>
 </body>
 </html>
