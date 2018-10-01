@@ -1,5 +1,5 @@
 .page{
-    margin-top: 38px;
+    margin-top: 70px;
 }
 
 .main-color{
@@ -116,7 +116,15 @@ table{
 }
 
 .icon-w{
-    max-width: 60px;
+    max-width: 50px;
+}
+
+.link-clear{
+    color: #000;
+}
+
+.link-clear:hover{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px){
