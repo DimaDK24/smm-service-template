@@ -159,3 +159,22 @@ table {
         font-size: 1.4rem;
     }
 }
+
+.header, .public {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-checkbox {
+    display: inline-block;
+    width: 20px;
+}
+
+.publics {
+    background-color: white;
+}
+
+label {
+    margin-bottom: 0;
+}
