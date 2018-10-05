@@ -204,6 +204,7 @@ label {
 
     .right-position{
         width: 80%;
+        margin-top: 15px;
     }
 
     .feather{
@@ -212,6 +213,10 @@ label {
 
     .followers-count, .dogs-count{
         display: flex;
+    }
+
+    .left-position{
+        width: 100%;
     }
 }
 
