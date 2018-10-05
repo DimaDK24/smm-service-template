@@ -1,54 +1,55 @@
-.page{
+.page {
     margin-top: 70px;
 }
 
-.main-color{
+.main-color {
     background-color: #4A76A8;
 }
 
-header{
+header {
     background-color: #4A76A8;
     position: fixed;
-    left: 0; right: 0;
+    left: 0;
+    right: 0;
     top: 0;
     z-index: 100;
 }
 
-.nav-link{
+.nav-link {
     color: #fff;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #fff;
 }
 
-.navbar{
+.navbar {
     margin: 0;
 }
 
-table{
+table {
     font-size: 1.2rem;
 }
 
-.label-res{
+.label-res {
     margin-bottom: 0;
     min-height: 2.5rem !important;
 }
 
-.title-text{
+.title-text {
     font-size: 1rem;
 }
 
-.table-center{
+.table-center {
     text-align: center;
 }
 
-.ccl-new::before, .ccl-new::after{
+.ccl-new::before, .ccl-new::after {
     width: 2rem;
     height: 2rem;
 }
 
-.btn-add-public{
+.btn-add-public {
     color: #fff;
     background-color: #4A76A8;
     padding: 10px 20px;
@@ -56,81 +57,81 @@ table{
     border-radius: 3px;
 }
 
-.btn-add-public:hover{
+.btn-add-public:hover {
     background-color: #3D6898;
     text-decoration: none;
     color: #fff;
 }
 
-.icon-my{
+.icon-my {
     width: 24px;
 }
 
-.header-panel{
+.header-panel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-content: space-around;
 }
 
-.header-control{
+.header-control {
     display: block;
     border: 1px solid #ced4da;
     border-radius: 5px;
     padding: 10px 25px;
 }
 
-.header-control:hover{
+.header-control:hover {
     cursor: pointer;
 }
 
-.public-text-name{
+.public-text-name {
     font-size: 1.8rem;
     margin: 0;
     padding: 0;
 }
 
-.ava{
+.ava {
     margin-right: 15px;
     width: 4rem;
     height: 4rem;
 }
 
-.public-users{
+.public-users {
     padding-top: 1rem;
 }
 
-.count{
+.count {
     margin-left: 15px;
 }
 
-.progress{
+.progress {
     background-color: #a3abb3 !important;
 }
 
-.completing{
+.completing {
     font-size: 14px;
 }
 
-.percent{
+.percent {
     position: absolute;
     left: 50%;
 }
 
-.icon-w{
+.icon-w {
     max-width: 50px;
 }
 
-.link-clear{
+.link-clear {
     color: #000;
 }
 
-.link-clear:hover{
+.link-clear:hover {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px){
-    .header-control{
+@media screen and (max-width: 768px) {
+    .header-control {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -144,17 +145,17 @@ table{
     }
 }
 
-@media screen and (max-width: 380px){
-    .header-control{
+@media screen and (max-width: 380px) {
+    .header-control {
         padding: 10px;
     }
 
-    .ava{
+    .ava {
         width: 3rem;
         height: 3rem;
     }
 
-    .public-text-name{
+    .public-text-name {
         font-size: 1.4rem;
     }
 }
