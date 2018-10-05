@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Language" content="ru"/>
+    <meta http-equiv="Content-Language" content="en"/>
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#4188c9">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -13,10 +15,23 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
-    <title>IceBerg</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic" rel="stylesheet">
+    <!-- Generated: 2018-04-16 09:29:05 +0200 -->
+    <title>Homepage - tabler.github.io - a responsive, flat and full featured admin template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic"
+          rel="stylesheet">
+    <script src="./assets/js/require.min.js"></script>
+    <script>
+        requirejs.config({
+            baseUrl: '.'
+        });
+    </script>
+    <!-- Dashboard Core -->
+    <script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
     <link href="./assets/css/dashboard.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="./assets/css/main.css" rel="stylesheet"/>
+    <script src="./assets/js/dashboard.js"></script>
+    <!-- Input Mask Plugin -->
 </head>
 <body>
 <header>
@@ -25,8 +40,8 @@
             <div class="col-auto">
                 <nav>
                     <ul class="navbar">
-                        <li class="nav-item"><a class="nav-link" href="./">Главная</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./clean.html">Очистка</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Очистка</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,9 +52,9 @@
     <div class="page-main">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="card">
-                        <a href="./clean.html" class="d-block link-clear">
+                        <a href="clear.html" class="d-block link-clear">
                             <div class="card-status bg-blue">
                             </div>
                             <div class="card-header">
