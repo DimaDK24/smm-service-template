@@ -63,6 +63,11 @@ table {
     color: #fff;
 }
 
+.avatar{
+    width: 4rem;
+    height: 4rem;
+}
+
 .icon-my {
     width: 24px;
 }
@@ -89,12 +94,6 @@ table {
     font-size: 1.8rem;
     margin: 0;
     padding: 0;
-}
-
-.ava {
-    margin-right: 15px;
-    width: 4rem;
-    height: 4rem;
 }
 
 .public-users {
@@ -130,35 +129,14 @@ table {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    .header-control {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
+.feather{
+    display: none;
 }
 
-@media screen and (max-width: 380px) {
-    .header-control {
-        padding: 10px;
-    }
 
-    .ava {
-        width: 3rem;
-        height: 3rem;
-    }
 
-    .public-text-name {
-        font-size: 1.4rem;
-    }
-}
+
+/* NEW Style */
 
 .header{
     display: flex;
@@ -169,8 +147,21 @@ table {
 
 .public {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.left-position{
+    display: flex;
+    justify-content: space-around;
+    width: 62%;
+    align-items: center;
+}
+
+.right-position{
+    display: flex;
+    justify-content: space-around;
+    width: 38%;
 }
 
 .header-checkbox {
@@ -191,4 +182,50 @@ table {
 
 label {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .header-control {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .header,.checkbox{
+        display: none;
+    }
+
+    .right-position{
+        width: 80%;
+    }
+
+    .feather{
+        display: block;
+    }
+
+    .followers-count, .dogs-count{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header-control {
+        padding: 10px;
+    }
+
+    .avatar{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .public-text-name {
+        font-size: 1.4rem;
+    }
 }
