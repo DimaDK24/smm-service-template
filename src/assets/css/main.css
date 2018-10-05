@@ -160,7 +160,14 @@ table {
     }
 }
 
-.header, .public {
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .75rem 6%;
+}
+
+.public {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -172,7 +179,14 @@ table {
 }
 
 .publics {
+    padding: 10px 0;
     background-color: white;
+}
+
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    width: 29%;
 }
 
 label {
