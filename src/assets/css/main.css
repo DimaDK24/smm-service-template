@@ -108,6 +108,9 @@ table {
 
 .progress {
     background-color: #a3abb3 !important;
+    height: 10px;
+    width: 28%;
+    right: 5%;
 }
 
 .completing {
@@ -151,6 +154,9 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .5rem 0;
+    border-bottom: 1px solid rgba(0, 40, 100, 0.12);
+    border-radius: 3px;
 }
 
 .left-position{
@@ -172,7 +178,6 @@ table {
 }
 
 .publics {
-    padding: 10px 0;
     background-color: white;
 }
 
@@ -207,6 +212,8 @@ label {
     .right-position{
         width: 80%;
         margin-top: 15px;
+        justify-content: space-between;
+        padding: 0 10px;
     }
 
     .feather{
@@ -219,6 +226,22 @@ label {
 
     .left-position{
         width: 100%;
+    }
+
+    .publics{
+        background: none;
+    }
+    
+    .public{
+        background-color: #fff;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .progress{
+        margin-top: 15px;
+        width: 76%;
+        right: 0;
     }
 }
 
