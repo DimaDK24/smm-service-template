@@ -109,8 +109,7 @@ table {
 .progress {
     background-color: #a3abb3 !important;
     height: 10px;
-    width: 28%;
-    right: 5%;
+    width: 80%;
 }
 
 .completing {
@@ -187,6 +186,13 @@ table {
     width: 29%;
 }
 
+.progress-position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38%;
+}
+
 label {
     margin-bottom: 0;
 }
@@ -228,6 +234,12 @@ label {
         width: 100%;
     }
 
+    .progress-position{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .publics{
         background: none;
     }
@@ -239,7 +251,7 @@ label {
     }
 
     .progress{
-        margin-top: 15px;
+        margin-top: 5px;
         width: 76%;
         right: 0;
     }
