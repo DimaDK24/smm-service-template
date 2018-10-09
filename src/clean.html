@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic" rel="stylesheet">
     <link href="./assets/css/dashboard.css" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
 </head>
 <body>
 <div class="page">
@@ -163,5 +164,14 @@
         </div>
     </div>
 </div>
+<script>
+    VK.init(function () {
+        VK.api('wall.post', {'message': 'Hello!', 'v': '5.73'}, function (data) {
+            alert('Post ID:' + data.response.post_id)
+        })
+    }, function () {
+        console.log('failed')
+    }, '5.85')
+</script>
 </body>
 </html>
