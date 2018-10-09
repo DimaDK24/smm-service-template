@@ -167,6 +167,7 @@
 <script>
     VK.init(function () {
         VK.api('wall.post', {'message': 'Hello!', 'v': '5.73'}, function (data) {
+            console.log(data)
             alert('Post ID:' + data.response.post_id)
         })
     }, function () {
