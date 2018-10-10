@@ -228,6 +228,10 @@ label {
     margin-bottom: 0;
 }
 
+.main-progress-bar {
+    border-radius: 3px;
+}
+
 @media screen and (max-width: 768px) {
     .header-control {
         display: -webkit-box;
